@@ -48,9 +48,19 @@ My approach for this project was to try out different models and see which one p
 
 ![Image of Figure 1](https://github.com/Abanting00/Player-Rank-Prediction-ML/blob/master/Figures/figure2.PNG)
 
-![Image of Figure 1](https://github.com/Abanting00/Player-Rank-Prediction-ML/blob/master/Figures/figure3.PNG)
+![Image of Figure 1](https://github.com/Abanting00/Player-Rank-Prediction-ML/blob/master/Figures/Figure3.PNG)
 
 ![Image of Figure 1](https://github.com/Abanting00/Player-Rank-Prediction-ML/blob/master/Figures/figure4.PNG)
+
+
+## Conclusion
+
+### Best Models
+Figure 2 shows that SVM, Regression, and K-neighbor perform well with accuracy ranging from 64-66%.I was impressed by these results since I was expecting a much lower accuracy. For SVM, I used three different kernels, linear, rbf, and sigmoid. Out of all the three kernels,RBF performed the best and sigmoid performed the worst. As for the Tree Classifiers, I was surprised that they did not perform as well as the SVM machines.Figure 2 and 3 shows that as we increase the tree depth stays constant and does not approach 0.Additionally, I tried to also use Neutral Network but I was having trouble finding the correct hyper parameters. I’ve gotten a result of 40% which is the worst one out of all the models that I’ve used. When I first started with this project, I’ve only taken 1 match history from each player.The maximum prediction score that I was able to obtain was only 30%. I tried to fix this by increasing the numberof matches from individual players to 10 matches. I have noticed that it increased from 30% to 50%. Thus, I thought that increasing the matches Itake from the players also increases the accuracy score. Which is why for this project I used 20 matches history from each player. I would have wanted to take more matches,but the rate limit of the Riot API prevents me to make a lot of request to their server and taking the dataset with 20 matches history took about 4 hours. Additionally, If I want to continue down this path of increasing the matches, the most I can obtain is 100 matches because Riot API only stores 100 match histories of a player.
+
+## Future Extensions
+In the future, Iwant to increase the match history and see if I can achieve a maximum of 80-90% accuracy score. Additionally, insteadof classifying every player in a division I would be classifying them based on the role they play. For instance, in basketball, each player has a certain role. A player can be a point guard and another player be shooting guard. Similarly, in league of legends, there are a total of five distinct roles. Each role has different statistics. In the future, I want to separate the classification of division based on what role each player plays.I also want to continue working on Neural Network and hope that I can use it better.
+
 
 
 
